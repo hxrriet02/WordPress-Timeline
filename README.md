@@ -11,10 +11,10 @@ A shortcode to create a timeline that uses bootstrap for the design and a custom
   - The order is decided through the Item Attributes > Order field
 
 View all of items
-![Timeline Items](img.png)
+![Timeline Items](demo-images/img.png)
 
 A single item in the editing page. The order field in on the right under the Item Attributes metabox.
-![Edit Item](img_2.png)
+![Edit Item](demo-images/img_2.png)
 
 The timeline that is created through the shortcode.
-![Timeline Shortcode](img_1.png)
+![Timeline Shortcode](demo-images/img_1.png)
