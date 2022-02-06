@@ -1,0 +1,65 @@
+.hkh_timeline {
+  position: relative;
+  margin: 3rem 0;
+}
+.hkh_timeline .row {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.hkh_timeline .row.left {
+  flex-direction: row;
+}
+.hkh_timeline .row.left .title {
+  justify-content: flex-end;
+}
+.hkh_timeline .row.right {
+  flex-direction: row-reverse;
+}
+.hkh_timeline .row .title {
+  display: flex;
+  align-items: center;
+}
+.hkh_timeline .row .col, .hkh_timeline .row .col-md {
+  margin: 0.5rem 1rem;
+}
+.hkh_timeline .row::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 5px solid #343434;
+  border-radius: 50%;
+  z-index: 1;
+}
+.hkh_timeline::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  background-color: #343434;
+  top: -1rem;
+  bottom: -1rem;
+  left: 50%;
+  margin-left: -5px;
+  border-radius: 5rem;
+}
+@media (max-width: 767px) {
+  .hkh_timeline .row .col-md {
+    padding-left: 5rem;
+  }
+  .hkh_timeline .row::after {
+    left: 0.25rem;
+  }
+  .hkh_timeline .row.left {
+    flex-direction: initial;
+  }
+  .hkh_timeline .row.left .title {
+    justify-content: initial;
+  }
+  .hkh_timeline::after {
+    left: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

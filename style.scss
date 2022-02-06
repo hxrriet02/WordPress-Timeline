@@ -1,0 +1,83 @@
+.hkh_timeline {
+    position: relative;
+    margin: 3rem 0;
+
+    // Bootstrap one
+    .row {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        &.left {
+            flex-direction: row;
+
+            .title {
+                justify-content: flex-end;
+            }
+        }
+
+        &.right {
+            flex-direction: row-reverse;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+        }
+
+        .col, .col-md {
+            margin: 0.5rem 1rem;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            border: 5px solid #343434;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        background-color: #343434;
+        top: -1rem;
+        bottom: -1rem;
+        left: 50%;
+        margin-left: -5px;
+        border-radius: 5rem;
+    }
+
+    @media (max-width: 767px) {
+        .row {
+            // Column (so it doesn't clip the vertical line)
+            .col-md {
+                padding-left: 5rem;
+            }
+
+            // Dot
+            &::after {
+                left: 0.25rem
+            }
+
+            &.left {
+                 flex-direction: initial;
+
+                 .title {
+                     justify-content: initial;
+                 }
+             }
+        }
+
+
+        // Timeline vertical line
+        &::after {
+            left: 1rem
+        }
+    }
+}
