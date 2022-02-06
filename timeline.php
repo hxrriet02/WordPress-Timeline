@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:     HKH Timeline
- * Description:     A plugin to display a bootstrap timeline
+ * Description:     A plugin to display a timeline using bootstrap.
  * Version:         1.0.0
  */
 
