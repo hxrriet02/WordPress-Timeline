@@ -6,5 +6,8 @@
  * Version:         1.0.0
  */
 
+// Exit if accessed directly.
+defined('ABSPATH') || exit;
+
 require_once 'post-type.php';
 require_once 'shortcode.php';

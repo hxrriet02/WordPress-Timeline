@@ -1,5 +1,8 @@
 <?php
 
+// Exit if accessed directly.
+defined('ABSPATH') || exit;
+
 add_shortcode("timeline", "hkh_timeline_shortcode");
 
 add_action("wp_enqueue_scripts", "hkh_timeline_scripts", 1000);

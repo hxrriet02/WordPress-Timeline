@@ -1,5 +1,8 @@
 <?php
 
+// Exit if accessed directly.
+defined('ABSPATH') || exit;
+
 add_action("init", "hkh_timeline_item_post_type", 0);
 
 function hkh_timeline_item_post_type() {
