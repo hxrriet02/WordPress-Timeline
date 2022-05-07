@@ -2,6 +2,8 @@
 
 /**
  * Plugin Name:     HKH Timeline
+ * Author:          Harry Harrison
+ * Author URI:      https://hharrison.uk
  * Description:     A plugin to display a timeline using bootstrap.
  * Version:         1.0.0
  */
